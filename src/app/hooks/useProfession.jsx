@@ -43,7 +43,11 @@ export const ProfessionProvider = ({ children }) => {
 
     return (
         <ProfessionContext.Provider
-            value={{ isLoading, professions, getProfession }}
+            value={{
+                isLoading,
+                professions,
+                getProfession
+            }}
         >
             {children}
         </ProfessionContext.Provider>
